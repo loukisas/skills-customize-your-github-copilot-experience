@@ -1,19 +1,56 @@
+# 📘 Assignment: Hangman Game Challenge
 
-# 🎮 Hangman Game Challenge
+## 🎯 Objective
 
-Build the classic word-guessing game using Python strings, loops, and user input.
+Implement a classic Hangman game in Python to practice string manipulation, loops, conditional logic, and user interaction.
 
-## � What You'll Build
+## 📝 Tasks
 
-Create a Hangman game where players guess letters to reveal a hidden word before running out of attempts.
+### 🛠️ Word Selection and Game Setup
 
-**Skills practiced:** String manipulation, loops, conditionals, random selection
+#### Description
 
-## ✅ Must Have's
+Create the initial game setup by selecting a random word and preparing the game state.
 
-Your game must:
-- Randomly select words from a predefined list
-- Accept letter guesses and show current progress (_ _ _ format)
-- Track incorrect guesses remaining
-- End when word is guessed or attempts exhausted
-- Display win/lose messages
+#### Requirements
+Completed program should:
+
+- Define a predefined list of words and select one randomly using `random.choice()`.
+- Initialize the hidden word display (e.g., `_ _ _ _`) based on the selected word length.
+- Set maximum allowed incorrect attempts (e.g., 6).
+- List used letters as the game progresses.
+
+### 🛠️ Guess Processing and Game Loop
+
+#### Description
+
+Handle player guesses in a loop, updating display and managing incorrect/vs correct guesses.
+
+#### Requirements
+Completed program should:
+
+- Prompt the player for one letter guess at a time.
+- Validate input (single alphabetic character, not already guessed).
+- Reveal matching letters in the display when guess is correct.
+- Decrement remaining attempts for incorrect guesses.
+- Show current state after each guess, for example:
+  ```
+  Word: h _ n g m a n
+  Used letters: a, e, i
+  Remaining attempts: 4
+  ```
+
+### 🛠️ Win/Loss Logic and Feedback
+
+#### Description
+
+Determine the game outcome and provide user feedback when the game is over.
+
+#### Requirements
+Completed program should:
+
+- End the game with a win message when the user guesses all letters.
+- End the game with a lose message when attempts reach zero and show the correct word.
+- Print final user-friendly messages, e.g., `Congratulations, you won!` or `Game over. The word was: python`.
+- Optionally, ask if the player wants to play again and restart the game loop.
+
