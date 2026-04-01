@@ -58,6 +58,20 @@
           "type": "csv"
         }
       ]
+    },
+    {
+      "id": "python-text-processing",
+      "title": "Python Text Processing",
+      "description": "Work with strings, file I/O, and text manipulation to build a text analysis tool.",
+      "path": "assignments/python-text-processing",
+      "dueDate": "2026-04-08",
+      "attachments": [
+        {
+          "name": "Starter Code",
+          "file": "starter-code.py",
+          "type": "python"
+        }
+      ]
     }
   ]
 }
